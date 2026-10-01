@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUCCI | Haute Couture &amp; Sartorial Leather Atelier Firenze</title>
+    <meta name="description" content="LUCCI — Archival haute couture, Florentine sartorial tailoring, and master leathercraft trunk 'Il Baule D'Oro'." />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Editorial Typography Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    
+    <!-- Material Symbols Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS v3 with exact design tokens from Stitch project -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#051e0f",
+              "primary-container": "#1a3323",
+              "primary-fixed": "#ccead2",
+              "primary-fixed-dim": "#b1ceb7",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#809c87",
+              "on-primary-fixed": "#072012",
+              "on-primary-fixed-variant": "#334c3b",
+              
+              "secondary": "#775a19",
+              "secondary-container": "#fed488",
+              "secondary-fixed": "#ffdea5",
+              "secondary-fixed-dim": "#e9c176",
+              "on-secondary": "#ffffff",
+              "on-secondary-container": "#785a1a",
+              "on-secondary-fixed": "#261900",
+              "on-secondary-fixed-variant": "#5d4201",
+
+              "tertiary": "#39030c",
+              "tertiary-container": "#55181f",
+              "tertiary-fixed": "#ffdada",
+              "tertiary-fixed-dim": "#ffb3b6",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#d47c81",
+              "on-tertiary-fixed": "#3d050e",
+              "on-tertiary-fixed-variant": "#753137",
+
+              "surface": "#fbf9f5",
+              "surface-bright": "#fbf9f5",
+              "surface-dim": "#dbdad6",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f5f3ef",
+              "surface-container": "#efeeea",
+              "surface-container-high": "#eae8e4",
+              "surface-container-highest": "#e4e2de",
+              "surface-variant": "#e4e2de",
+              "surface-tint": "#4a6452",
+
+              "background": "#fbf9f5",
+              "on-background": "#1b1c1a",
+              "on-surface": "#1b1c1a",
+              "on-surface-variant": "#424843",
+              
+              "outline": "#737972",
+              "outline-variant": "#c2c8c1",
+              
+              "inverse-surface": "#30312e",
+              "inverse-on-surface": "#f2f0ed",
+              "inverse-primary": "#b1ceb7",
+              
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a"
+            },
+            fontFamily: {
+              serif: ["Playfair Display", "Georgia", "serif"],
+              sans: ["Montserrat", "-apple-system", "sans-serif"],
+              "display-hero": ["Playfair Display", "serif"],
+              "display-hero-mobile": ["Playfair Display", "serif"],
+              "headline-xl": ["Playfair Display", "serif"],
+              "headline-xl-mobile": ["Playfair Display", "serif"],
+              "headline-lg": ["Playfair Display", "serif"],
+              "headline-lg-mobile": ["Playfair Display", "serif"],
+              "headline-md": ["Playfair Display", "serif"],
+              "headline-sm": ["Playfair Display", "serif"],
+              "body-lg": ["Montserrat", "sans-serif"],
+              "body-md": ["Montserrat", "sans-serif"],
+              "body-sm": ["Montserrat", "sans-serif"],
+              "label-caps-lg": ["Montserrat", "sans-serif"],
+              "label-caps-md": ["Montserrat", "sans-serif"],
+              "label-caps-sm": ["Montserrat", "sans-serif"]
+            },
+            fontSize: {
+              "display-hero": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "400" }],
+              "display-hero-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "400" }],
+              "headline-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.015em", fontWeight: "400" }],
+              "headline-xl-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "400" }],
+              "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "0em", fontWeight: "400" }],
+              "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "0em", fontWeight: "400" }],
+              "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0.01em", fontWeight: "500" }],
+              "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0.02em", fontWeight: "600" }],
+              "body-lg": ["16px", { lineHeight: "28px", letterSpacing: "0.01em", fontWeight: "300" }],
+              "body-md": ["14px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "400" }],
+              "body-sm": ["12px", { lineHeight: "20px", letterSpacing: "0.03em", fontWeight: "400" }],
+              "label-caps-lg": ["13px", { lineHeight: "18px", letterSpacing: "0.2em", fontWeight: "500" }],
+              "label-caps-md": ["11px", { lineHeight: "16px", letterSpacing: "0.25em", fontWeight: "500" }],
+              "label-caps-sm": ["9px", { lineHeight: "14px", letterSpacing: "0.3em", fontWeight: "600" }]
+            },
+            borderRadius: {
+              DEFAULT: "0px",
+              none: "0px",
+              sm: "0px",
+              md: "0px",
+              lg: "0px",
+              xl: "0px",
+              full: "9999px"
+            },
+            spacing: {
+              "gutter": "2rem",
+              "gutter-mobile": "1rem",
+              "margin": "4rem",
+              "margin-mobile": "1.5rem",
+              "space-xs": "0.25rem",
+              "space-sm": "0.5rem",
+              "space-md": "1rem",
+              "space-lg": "2rem",
+              "space-xl": "3.5rem"
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-surface">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
